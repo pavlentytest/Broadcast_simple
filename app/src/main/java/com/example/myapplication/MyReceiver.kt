@@ -7,6 +7,7 @@ import android.widget.Toast
 
 class MyReceiver : BroadcastReceiver() {
 
+    // https://www.geeksforgeeks.org/broadcast-receiver-in-android-with-example/
     override fun onReceive(context: Context, intent: Intent) {
         // This method is called when the BroadcastReceiver is receiving an Intent broadcast.
         val isAirplaneModeEnabled = intent?.getBooleanExtra("state", false) ?: return
